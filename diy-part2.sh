@@ -12,5 +12,5 @@
 
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.30.2/g' package/base-files/files/bin/config_generate
-# sed -i 's/\/luci-static\/bootstrap/\/luci-static\/argon/g' feeds/luci/modules/luci-base/root/etc/config/luci 
+sed -i 's/\/luci-static\/bootstrap/\/luci-static\/argon/g' feeds/luci/modules/luci-base/root/etc/config/luci 
 # ./scripts/feeds install luci -a
