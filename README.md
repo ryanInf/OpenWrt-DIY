@@ -1,6 +1,8 @@
 # Opewrt-DIY
-lan:192.168.1.1
+lan:192.168.1.1 root/password
 
+基本上常用的组网工具、IPV6、组播代理等常用的工具都已安装，默认已编译VMware、PVE、IMG格式文件，方便部署，懂的用吧。
+![](images/8c43565a272ad9278d7629e1202ca32.png)
 
 **English** | [中文](https://p3terx.com/archives/build-openwrt-with-github-actions.html)
 
