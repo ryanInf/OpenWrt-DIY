@@ -9,7 +9,10 @@ lan:192.168.1.1 root/password
 - 默认已编译VMware、PVE、IMG格式文件，方便部署
 - rootfs已增大到4GB，可以装更多插件，更能折腾
 
-
+# 怎么用？
+点击上方Actions，点击"Build OpenWrt xxx"，其中xxx为你想下载的路由器版本，找的最新的Actions workflow 下载生成的Artifacts即可，虽然可能提示错误实际是已经生成好固件可正常使用。
+![](images/2023-04-16-18-11-05.png)
+![](images/2023-04-16-18-10-42.png)
 
 **English** | [中文](https://p3terx.com/archives/build-openwrt-with-github-actions.html)
 
