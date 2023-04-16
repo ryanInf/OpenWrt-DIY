@@ -6,55 +6,32 @@ lan:192.168.1.1 root/password
 
 
 # x86 版本
+x86通用固件，可物理机、VMware、PVE等部署。
 - 默认已编译VMware、PVE、IMG格式文件，方便部署
 - rootfs已增大到4GB，可以装更多插件，更能折腾
+
+# MSG1500
+瑞斯康达MSG1500路由器，买了一个但一个月不到就挂了，性能一般般，跑Wireguard性能很差。
+CPU: MediaTek MT7621A
+WIFI: MT7615DN,  2.4G(2T2R),  5G(2T2R)
+MEM: 南亚内存DDR3-256M:  型号：NT5CC128M16IP-DI
+闪存：Winbond NAND FLASH 128M
+
+
+# ZN-M2
+兆能ZN-M2，CPU性能比较强，但内存刷入Openwrt后仅剩140MB左右，如果要跑多个插件需要硬改内存。
+CPU: IPQ6000
+MEM: 256M
+闪存：128M
+
 
 # 怎么用？
 点击上方Actions，点击"Build OpenWrt xxx"，其中xxx为你想下载的路由器版本，找的最新的Actions workflow 下载生成的Artifacts即可，虽然可能提示错误实际是已经生成好固件可正常使用。
 ![](images/2023-04-16-18-11-05.png)
 ![](images/2023-04-16-18-10-42.png)
 
-**English** | [中文](https://p3terx.com/archives/build-openwrt-with-github-actions.html)
+你也可以Fork本项目，然后自行修改对应的配置文件。
 
-# Actions-OpenWrt
-
-[![LICENSE](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square&label=LICENSE)](https://github.com/P3TERX/Actions-OpenWrt/blob/master/LICENSE)
-![GitHub Stars](https://img.shields.io/github/stars/P3TERX/Actions-OpenWrt.svg?style=flat-square&label=Stars&logo=github)
-![GitHub Forks](https://img.shields.io/github/forks/P3TERX/Actions-OpenWrt.svg?style=flat-square&label=Forks&logo=github)
-
-A template for building OpenWrt with GitHub Actions
-
-## Usage
-
-- Click the [Use this template](https://github.com/P3TERX/Actions-OpenWrt/generate) button to create a new repository.
-- Generate `.config` files using [Lean's OpenWrt](https://github.com/coolsnowwolf/lede) source code. ( You can change it through environment variables in the workflow file. )
-- Push `.config` file to the GitHub repository.
-- Select `Build OpenWrt` on the Actions page.
-- Click the `Run workflow` button.
-- When the build is complete, click the `Artifacts` button in the upper right corner of the Actions page to download the binaries.
-
-## Tips
-
-- It may take a long time to create a `.config` file and build the OpenWrt firmware. Thus, before create repository to build your own firmware, you may check out if others have already built it which meet your needs by simply [search `Actions-Openwrt` in GitHub](https://github.com/search?q=Actions-openwrt).
-- Add some meta info of your built firmware (such as firmware architecture and installed packages) to your repository introduction, this will save others' time.
-
-## Credits
-
-- [Microsoft Azure](https://azure.microsoft.com)
-- [GitHub Actions](https://github.com/features/actions)
-- [OpenWrt](https://github.com/openwrt/openwrt)
-- [Lean's OpenWrt](https://github.com/coolsnowwolf/lede)
-- [tmate](https://github.com/tmate-io/tmate)
-- [mxschmitt/action-tmate](https://github.com/mxschmitt/action-tmate)
-- [csexton/debugger-action](https://github.com/csexton/debugger-action)
-- [Cowtransfer](https://cowtransfer.com)
-- [WeTransfer](https://wetransfer.com/)
-- [Mikubill/transfer](https://github.com/Mikubill/transfer)
-- [softprops/action-gh-release](https://github.com/softprops/action-gh-release)
-- [ActionsRML/delete-workflow-runs](https://github.com/ActionsRML/delete-workflow-runs)
-- [dev-drprasad/delete-older-releases](https://github.com/dev-drprasad/delete-older-releases)
-- [peter-evans/repository-dispatch](https://github.com/peter-evans/repository-dispatch)
-
-## License
-
-[MIT](https://github.com/P3TERX/Actions-OpenWrt/blob/main/LICENSE) © [**P3TERX**](https://p3terx.com)
+# 感谢
+https://github.com/coolsnowwolf/lede
+https://p3terx.com/archives/build-openwrt-with-github-actions.html
