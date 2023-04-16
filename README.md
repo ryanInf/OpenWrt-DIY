@@ -33,5 +33,5 @@ x86通用固件，可物理机、VMware、PVE等部署。
 你也可以Fork本项目，然后自行修改对应的配置文件。
 
 # 感谢
-https://github.com/coolsnowwolf/lede
+https://github.com/coolsnowwolf/lede 
 https://p3terx.com/archives/build-openwrt-with-github-actions.html
