@@ -1,11 +1,13 @@
 # Opewrt-DIY
 lan:192.168.1.1 root/password
 
-基本上常用的组网工具、IPV6、组播代理等常用的工具都已安装，默认已编译VMware、PVE、IMG格式文件，方便部署，懂的用吧。
+基本上常用的组网工具、IPV6、组播代理、mwan3等常用的工具都已安装，懂的用吧。
 ![](images/8c43565a272ad9278d7629e1202ca32.png)
 
 
-
+# x86 版本
+- 默认已编译VMware、PVE、IMG格式文件，方便部署
+- rootfs已增大到4GB，可以装更多插件，更能折腾
 
 
 
