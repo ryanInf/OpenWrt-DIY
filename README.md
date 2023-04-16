@@ -5,7 +5,7 @@ lan:192.168.1.1 root/password
 ![](images/8c43565a272ad9278d7629e1202ca32.png)
 
 
-# x86 版本
+# X86
 x86通用固件，可物理机、VMware、PVE等部署。 
 - 默认已编译VMware、PVE、IMG格式文件，方便部署 
 - rootfs已增大到4GB，可以装更多插件，更能折腾 
@@ -33,5 +33,5 @@ x86通用固件，可物理机、VMware、PVE等部署。
 你也可以Fork本项目，然后自行修改对应的配置文件。
 
 # 感谢
-https://github.com/coolsnowwolf/lede 
+https://github.com/coolsnowwolf/lede  
 https://p3terx.com/archives/build-openwrt-with-github-actions.html
